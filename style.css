@@ -649,20 +649,31 @@ footer {
 }
 
 .articles__main-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   border-radius: 62px;
   border: 1px solid #E7E7E7;
   padding: 22px;
-  gap: 65px;
+  gap: 4vw;
   cursor: pointer;
 }
 
 .article__main-img {
-  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 .article__main-thumb {
   position: relative;
-  border-radius: 25px;
+  overflow: hidden;
+  width: 100%;
+  height: 478px;
+  border-radius: 50px;
 }
 
 .articles__main-content {
