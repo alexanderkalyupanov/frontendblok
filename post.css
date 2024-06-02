@@ -1,0 +1,21 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 345px;
+    gap: 52px;
+}
+
+.widget__title {
+    font-size: 25px;
+    line-height: 1.25;
+    font-family: "DM Serif Display", serif;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    color: #292F36;
+    margin: 0;
+}
+
+.widget {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
