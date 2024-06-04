@@ -1,3 +1,8 @@
+.page__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
 .content {
     display: grid;
     grid-template-columns: 1fr 345px;
@@ -175,6 +180,7 @@
     flex-grow: 1;
 }
 
+
 .author__name {
     font-size: 30px;
     line-height: 1.2;
@@ -280,12 +286,12 @@
     margin-bottom: 15px;
 }
 
-.post h2 {
+/* .post h2 {
     font-size: 50px;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     margin-bottom: 21px;
-}
+} */
 
 .post ul,
 .post ol {
@@ -330,6 +336,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 44px 0;
+    margin-bottom: 93px;
 }
 
 .p-last {
@@ -345,6 +352,7 @@
 .social__box {
     display: flex;
     gap: 54px;
+    margin-right: 5px;
 }
 
 .tags__item--kitchan {
@@ -402,9 +410,8 @@
     font-family: "Jost", sans-serif;
     color: #4D5053;
     font-size: 22px;
+    margin-bottom: 36px;
 }
-
-
 
 .post__input {
     border: none;
@@ -419,4 +426,61 @@
 
 .post__input:focus {
     outline: none;
+}
+
+.form__title {
+    margin-bottom: 56px;
+}
+
+.post__label {
+    font-size: 18px;
+    color: #CDA274;
+    margin-bottom: 63px;
+}
+
+.post_checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+.post_checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+.post_checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #CDA274;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+.post_checkbox:checked+label::before {
+    background-color: #CDA274;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+.post_checkbox:disabled+label::before {
+    background-color: white;
+  }
+
+.post__btn {
+    background-color: #292F36;
+    color: #FFFFFF;
+    padding: 26px 54px;
+    border-radius: 18px;
+    font-size: 18px;
+    font-family: "Jost", sans-serif;
+    outline: none;
+    cursor: pointer;
 }
