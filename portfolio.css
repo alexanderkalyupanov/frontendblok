@@ -1,0 +1,49 @@
+.portfolio__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio--sect {
+    max-width: 880px;
+    height: 75px;
+    border: 1px solid #CDA274;
+    border-radius: 18px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.portfolio__box {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__select--link {
+    border-radius: 18px;
+    padding: 24px 0;
+    width: 220px;
+    text-decoration: none;
+    color: #292F36;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.link__active {
+    background-color: #CDA274;
+    color: white;
+}
+
+.portfolio__image--box {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 585px 585px;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-bottom: 214px;
+}
+
+.portfolio__img {
+    max-width: 585px;
+}
