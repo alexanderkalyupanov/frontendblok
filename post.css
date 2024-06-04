@@ -367,3 +367,56 @@
     font-family: "DM Serif Display", serif;
     font-weight: 400;
 }
+
+.post__box {
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+    grid-template-rows: 45px 45px 175px;
+    grid-template-areas:
+      "name mail"
+      "web tel"
+      "texts texts";
+    row-gap: 50px;
+    column-gap: 25px;
+}
+
+.post__name {
+    grid-area: name;
+}
+
+.post__email {
+   grid-area: mail; 
+}
+
+.post__website {
+    grid-area: web; 
+}
+
+.post__tel {
+    grid-area: tel;
+}
+
+.post__textbox {
+    grid-area: texts;
+    resize: none;
+    font-family: "Jost", sans-serif;
+    color: #4D5053;
+    font-size: 22px;
+}
+
+
+
+.post__input {
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.post__input::placeholder {
+    font-size: 22px;
+    color: #4D5053;
+    line-height: 33px;
+}
+
+.post__input:focus {
+    outline: none;
+}
