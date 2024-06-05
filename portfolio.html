@@ -64,24 +64,69 @@
         <section class="portfolio">
           <div class="portfolio__container">
             <div class="portfolio--sect">
-                <div class="portfolio__box">
-                    <a href="#" class="portfolio__select--link">Bathroom</a>
-                    <a href="#" class="portfolio__select--link link__active">Bed Room</a>
-                    <a href="#" class="portfolio__select--link">Kitchan</a>
-                    <a href="#" class="portfolio__select--link">Living Area</a>
+                <div class="tabs">
+                    <button class="tab--link portfolio__select--link" onclick="openTab(event, `tab-1`)">Bathroom</button>
+                    <button class="tab--link portfolio__select--link" onclick="openTab(event, `tab-2`)">Bed Room</button>
+                    <button class="tab--link portfolio__select--link" onclick="openTab(event, `tab-3`)">Kitchan</button>
+                    <button class="tab--link portfolio__select--link" onclick="openTab(event, `tab-4`)">Living Area</button>
                 </div>
 
-        
+                
             </div>
-            <div class="portfolio__image--box">
+            <div  id="tab-1" class="tab-content" style="display: block;">
+                <div class="tab-content__box">
+                  <div class="portfolio__image--box">
+                    <img src="img/portfolio1.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio2.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio3.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio4.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio5.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio6.png" alt="" class="portfolio__img">
+                  </div>
+                </div>
+            </div>
+            <div  id="tab-2" class="tab-content">
+              <div class="tab-content__box">
+                <div class="portfolio__image--box">
+                  <img src="img/portfolio4.png" alt="" class="portfolio__img">
+                  <img src="img/portfolio5.png" alt="" class="portfolio__img">
+                  <img src="img/portfolio6.png" alt="" class="portfolio__img">
+                  <img src="img/portfolio1.png" alt="" class="portfolio__img">
+                  <img src="img/portfolio2.png" alt="" class="portfolio__img">
+                  <img src="img/portfolio3.png" alt="" class="portfolio__img">
+
+                </div>
+              </div>
+          </div>
+          
+          <div  id="tab-3" class="tab-content" >
+            <div class="tab-content__box">
+              <div class="portfolio__image--box">
                 <img src="img/portfolio1.png" alt="" class="portfolio__img">
                 <img src="img/portfolio2.png" alt="" class="portfolio__img">
-                <img src="img/portfolio3.png" alt="" class="portfolio__img">
-                <img src="img/portfolio4.png" alt="" class="portfolio__img">
                 <img src="img/portfolio5.png" alt="" class="portfolio__img">
                 <img src="img/portfolio6.png" alt="" class="portfolio__img">
-
+                <img src="img/portfolio3.png" alt="" class="portfolio__img">
+                <img src="img/portfolio4.png" alt="" class="portfolio__img">
+              </div>
+            </div>
         </div>
+        
+        <div  id="tab-4" class="tab-content">
+          <div class="tab-content__box">
+            <div class="portfolio__image--box">
+              <img src="img/portfolio1.png" alt="" class="portfolio__img">
+              <img src="img/portfolio4.png" alt="" class="portfolio__img">
+              <img src="img/portfolio5.png" alt="" class="portfolio__img">
+              <img src="img/portfolio6.png" alt="" class="portfolio__img">
+              <img src="img/portfolio2.png" alt="" class="portfolio__img">
+              <img src="img/portfolio3.png" alt="" class="portfolio__img">
+            </div>
+          </div>
+      </div>
+      
+            
+           
           </div>
 
         </section>

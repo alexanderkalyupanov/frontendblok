@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .portfolio__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -12,24 +16,32 @@
     margin-bottom: 60px;
 }
 
-.portfolio__box {
+.tabs {
     display: flex;
     justify-content: center;
 }
 
 .portfolio__select--link {
-    border-radius: 18px;
-    padding: 24px 0;
-    width: 220px;
+    padding: 25px 0;
+    width: 218px;
     text-decoration: none;
     color: #292F36;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
-    
+    cursor: pointer;
+    border: none;
 }
 
-.link__active {
+.portfolio__select--link:first-child {
+    border-radius: 0 0 0 18px;
+}
+
+.portfolio__select--link:last-child {
+    border-right: 18px;
+} 
+
+.active {
     background-color: #CDA274;
     color: white;
 }
