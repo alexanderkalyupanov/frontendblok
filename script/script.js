@@ -23,7 +23,7 @@ function openTab(event, tabName) {
   tabcontent[i].style.display = "none";
   }
   // Удаляем класс "active" со всех кнопок с классом "tablinks"
-  tablinks = document.getElementsByClassName("tab-link");
+  tablinks = document.getElementsByClassName("tab--link");
   for (i = 0; i < tablinks.length; i++) {
   tablinks[i].classList.remove("active");
   }
