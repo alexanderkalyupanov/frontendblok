@@ -1,0 +1,91 @@
+.contact__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact__title {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 683px;
+    margin-bottom: 80px;
+}
+
+.contacts__forms {
+    display: grid;
+    margin: 0 auto;
+    row-gap: 50px;
+    column-gap: 39px;
+    grid-template-columns: repeat(2, 380px);
+    grid-template-rows: 0.2fr 0.2fr 0.917fr auto;
+    grid-template-areas:
+      "text email"
+      "subject tel"
+      "textarea textarea"
+      "btn btn";
+    margin-bottom: 154px;
+}
+
+.contacts__form--subject {
+    font-family: "Jost", sans-serif;
+    width: 378px;
+    grid-area: subject;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.contacts__form--tel {
+    font-family: "Jost", sans-serif;
+    width: 378px;
+    grid-area: tel;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.contact__box {
+    display: flex;
+    gap: 55px;
+    max-height: 500px;
+}
+
+.contact__info {
+    border-radius: 50px;
+    background-color: #F4F0EC;
+    padding: 76px 32px;
+    max-height: 436px;
+}
+
+.contact__list--item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contacts__list--link {
+    text-decoration: none;
+    color: #4D5053;
+}
+
+.contacts__links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.contact__img {
+    margin-top: 10px;
+}
+
+.contacts__btn {
+    margin-left: 584px;
+}
+
+.cont__textarea {
+    resize: none;
+}

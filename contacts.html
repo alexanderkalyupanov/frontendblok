@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interno</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style-blog.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="contacts.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <a class="logo">
+            <img src="img/Logo.svg" alt="logo" />
+          </a>
+          <nav>
+            <ul class="header__nav">
+              <li class="header__item">
+                <a class="header__link">Home</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link">Our Projects</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link">Blog</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link">Contact</a>
+              </li>
+              <li class="header__item">
+                <button class="header__search" onclick="openModal()">
+                  <img src="img/search.svg" alt="" />
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__box">
+        <img src="img/contacts__bg.png" alt="" class="header__box--img" />
+        <div class="header__info">
+          <h2 class="header__info--title">Contact Us</h2>
+          <ul class="breadcrumbs">
+            <li class="breadcrubms__item">
+              <a href="#" class="breadcrubms__link">Home</a>
+            </li>
+            <span class="breadcrumbs__span">/</span>
+            <li class="breadcrubms__item">
+              <a href="#" class="breadcrubms__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+        <div class="page contact">
+            <div class="contact__container">
+                <h2 class="contact__title title">
+                    We love meeting new people and helping them.
+                </h2>
+                <div class="contact__box">
+                    <div class="contact__info">
+                        <ul class="contact__list">
+                            <div class="contact__list--item">
+                                <img src="img/contacts__icon_one.svg" alt="">
+                                <a href="mailto:info@yourdomain.com" class="contacts__list--link">info@yourdomain.com</a>
+                            </div>
+                            <div class="contact__list--item">
+                                <img src="img/contacts__icon_two.svg" alt="">
+                                <a href="tel:+1 (378) 400-1234" class="contacts__list--link">+1 (378) 400-1234</a>
+                            </div>
+                            <div class="contact__list--item">
+                                <img src="img/contact__icon__three.svg" alt="">
+                                <a href="www.yourdomain.com" target="_blank" class="contacts__list--link">www.yourdomain.com</a>
+                            </div>
+                          
+                        </ul>
+                        <div class="contacts__links">
+                            <a href="#" class="contacts__link">
+                                <img src="img/fb.svg" alt="">
+                            </a>
+                            <a href="#" class="contacts__link">
+                                <img src="img/twitter.svg" alt="">
+                            </a>
+                            <a href="#" class="contacts__link">
+                                <img src="img/linkedin.svg" alt="">
+                            </a>
+                            <a href="#" class="contacts__link">
+                                <img src="img/inst.svg" class="contact__img">
+                            </a>
+                        </div>
+                    </div>
+                    <form action="" class="contacts__forms">
+                        <input
+                          type="text"
+                          name="name"
+                          id=""
+                          class="contacts__form--text"
+                          placeholder="Name"
+                        />
+                        <input
+                          type="email"
+                          name="mail"
+                          id=""
+                          class="contacts__form--mail"
+                          placeholder="Email"
+                        />
+                        <input
+                          type="text"
+                          name="subject"
+                          id=""
+                          class="contacts__form--subject"
+                          placeholder="Subject"
+                        />
+                        <input
+                        type="tel"
+                        name="phone"
+                        id=""
+                        class="contacts__form--tel"
+                        placeholder="Phone"
+                      />
+                        <textarea
+                          name="text"
+                          id=""
+                          cols="30"
+                          rows="10"
+                          class="contacts__form--textarea cont__textarea"
+                          placeholder="Hello Iam Intrested in.."
+                        ></textarea>
+                        <div class="contacts__form--btn">
+                          <button class="contacts__btn btn">
+                            Send Now
+                            <img src="img/arrow-orange.svg" alt="" class="row__orange" />
+                          </button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__box">
+          <a class="logo">
+            <img src="img/Logo.svg" alt="logo" />
+          </a>
+          <ul class="footer__nav">
+            <li class="footer__item">
+              <p class="footer__text">
+                55 East Birchwood Ave. Brooklyn, New York 11201
+              </p>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="mailto:">contact@interno.com</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="tel:">(123) 456 - 7890</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay" id="overlay">
+      <div class="modal__search">
+        <div class="container">
+          <div class="modal__search-content">
+            <input
+              type="text"
+              class="modal__search-input"
+              placeholder="Search"
+            />
+            <button
+              type="submit"
+              onclick=""
+              class="modal__search--btn1 modal__btn"
+            >
+              <img src="img/search page.svg" alt="" />
+            </button>
+            <button
+              type="button"
+              onclick="closeModal()"
+              class="modal__search--btn2 modal__btn"
+            >
+              <img src="img/close.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
