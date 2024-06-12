@@ -6,7 +6,7 @@ function closeModal() {
   document.getElementById("overlay").style.top = "-100vh";
 }
 
-let swiper = new Swiper(".newSwiper", {
+let swiper = new Swiper(".swiper-feedback", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
